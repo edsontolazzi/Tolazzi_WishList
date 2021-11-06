@@ -1,3 +1,5 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Magento\Wishlist\Controller\Index\Add" type="Tolazzi\WishList\Controller\Index\Add"/>
+    <type name="Magento\Wishlist\Controller\Index\Add">
+        <plugin name="tolazzi_add_wishlist" type="Tolazzi\WishList\Plugin\WishList" sortOrder="1" disabled="false" />
+    </type>
 </config>
